@@ -1,9 +1,9 @@
 export PATH="$PATH:/opt/nvim-linux64/bin"
 # Set up the prompt
 
-autoload -Uz promptinit
-promptinit
-prompt adam1
+#autoload -Uz promptinit
+#promptinit
+#prompt adam1
 
 setopt histignorealldups sharehistory
 
@@ -38,3 +38,6 @@ compinit
 #zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+#Enable Starship
+eval "$(starship init zsh)"
