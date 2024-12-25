@@ -1,4 +1,8 @@
 export PATH="$PATH:/opt/nvim-linux64/bin"
+
+
+# FZF config
+export FZF_DEFAULT_OPTS='--height 40% --layout reverse --border'
 # Set up the prompt
 
 #autoload -Uz promptinit
@@ -39,5 +43,8 @@ compinit
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+
 #Enable Starship
 eval "$(starship init zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
