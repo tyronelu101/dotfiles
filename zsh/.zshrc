@@ -15,3 +15,5 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 #Sets up zsh shell to use Starship
 eval "$(starship init zsh)"
 
+
+alias dots="nvim $HOME/dotfiles"

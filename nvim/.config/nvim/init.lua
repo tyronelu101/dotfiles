@@ -17,5 +17,11 @@ vim.opt.expandtab = true
 vim.bo.softtabstop = 2
 --Allow terminal application colors
 vim.opt.termguicolors = true
-
 vim.cmd.colorscheme("tokyonight")
+--Allow text to be copied to clipboard 
+vim.opt.clipboard = 'unnamedplus'
+
+vim.opt.cursorline = true
+vim.opt.scrolloff = 5
+
+
