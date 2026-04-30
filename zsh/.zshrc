@@ -17,3 +17,4 @@ eval "$(starship init zsh)"
 
 
 alias dots="nvim $HOME/dotfiles"
+alias freecad="$HOME/Applications/FreeCAD_1.1.1-Linux-x86_64-py311.AppImage"
