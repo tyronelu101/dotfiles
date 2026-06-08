@@ -7,7 +7,7 @@ return {
     },
     keys = {
       { "<leader>ff", "<cmd>Telescope find_files<cr>",  desc = "Find Files (Root Dir)" },
-      { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Find Files (Grep)},
-      { "<leader>fb", "<cmd>Telescope Telescope buffers", desc = "Find Files (Buffer)}
+      { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Find Files (Grep)" },
+      { "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Find Files (Buffer)" }
     },
 } 
