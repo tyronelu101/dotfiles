@@ -14,4 +14,23 @@ return {
   opts = {
     -- fill any relevant options here
   },
+  keys = {
+    {
+      "<leader>fe",
+      function()
+        local root = vim.fn.getcwd()
+        require("neo-tree.command").execute({ toggle = true, dir = root })
+      end,
+      desc = "Explorer Neo-tree (Root Dir)",
+    },
+    {
+      "<leader>fE",
+      function()
+        require("neo-tree.command").execute({ toggle = true, dir = vim.uv.cwd() })
+      end,
+      desc = "Explorer Neo-tree (cwd)",
+    },
+    { "<leader>e", "<leader>fe", desc = "Explorer Neo-tree (Root Dir)", remap = true },
+    { "<leader>E", "<leader>fE", desc = "Explorer Neo-tree (cwd)", remap = true }, 
+  },
 }
