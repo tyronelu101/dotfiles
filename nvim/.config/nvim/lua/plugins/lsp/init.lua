@@ -11,10 +11,14 @@ return {
        callback = function(args)
          local buf = args.buf
          vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = buf, desc = "Goto definition" })
-         vim.keymap.set("n", "gr", vim.lsp.buf.references, { buffer = buf, desc = "Goto references" })
-         vim.keymap.set("n", "gI", vim.lsp.buf.definition, { buffer = buf, desc = "Goto Implementation" })
+         vim.keymap.set("n", "gr", require("telescope.builtin").lsp_references, { buffer = buf, desc = "Goto references" })
+         vim.keymap.set("n", "gI", vim.lsp.buf.implementation, { buffer = buf, desc = "Goto Implementation" })
          vim.keymap.set("n", "gy", vim.lsp.buf.type_definition, { buffer = buf, desc = "Goto T[y]pe Definition" })
          vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { buffer = buf, desc = "Goto Declaration" })
+         vim.keymap.set("i", "<c-p>", vim.lsp.buf.signature_help, { buffer = buf, desc = "Signature hints" })
+         vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { buffer = buf, desc = "Code Action" })
+         vim.keymap.set("n", "<leader>cc", vim.lsp.codelens.run, { buffer = buf, desc = "Run Codelens" })
+         vim.keymap.set("n", "<leader>cC", vim.lsp.codelens.refresh, { buffer = buf, desc = "Refresh and Display Codelens" })
        end
      })
   end,
