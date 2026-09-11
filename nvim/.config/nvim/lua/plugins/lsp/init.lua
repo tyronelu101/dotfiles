@@ -3,7 +3,7 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     { "mason-org/mason.nvim", opts = {}},
-    { "mason-org/mason-lspconfig.nvim", opts = {ensure_installed = { "pyright", "rust_analyzer" }}},
+    { "mason-org/mason-lspconfig.nvim", opts = {ensure_installed = { "pyright", "rust_analyzer", "clangd" }}},
   },
   config = function() 
      local lspconfig = require("lspconfig") 
