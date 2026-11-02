@@ -1,5 +1,5 @@
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
-#History
+export PATH=$PATH:/usr/local/go/binexport
 setopt histignorealldups sharehistory
 HISTFILE=$HOME/.zhistory
 SAVEHIST=1000
@@ -18,3 +18,5 @@ eval "$(starship init zsh)"
 
 alias dots="nvim $HOME/dotfiles"
 alias freecad="$HOME/Applications/FreeCAD_1.1.1-Linux-x86_64-py311.AppImage"
+
+. "$HOME/.local/bin/env"
