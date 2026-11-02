@@ -1,5 +1,5 @@
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
-export PATH="$PATH:/usr/local/go/binexport"
+export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$(go env GOPATH)/bin"
 setopt histignorealldups sharehistory
 HISTFILE=$HOME/.zhistory
